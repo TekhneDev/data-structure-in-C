@@ -19,6 +19,6 @@ int main() {
 
     //int resultado = somar(10, 20);
 
-    printf("%d \n", resultado);
+    printf("Soma: %d \n", resultado);
     return 0;
 }
