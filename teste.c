@@ -7,6 +7,9 @@ int somar(int n1, int n2) {
 
 int main() {
 
+	// operador interessante 
+	printf("%d \n", sizeof(int));
+
     int resultado = somar(10, 20);
 
     printf("%d \n", resultado);
