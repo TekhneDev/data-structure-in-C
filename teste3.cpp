@@ -16,6 +16,7 @@ int fat(int n) {
 int main() {
 	
 	int num = 4;
+	
 	printf("Fatorial de %d = %d\n", num, fat(num));
 	return 0;
 }
