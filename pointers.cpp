@@ -11,13 +11,16 @@ int main() {
 	int *p;
 	
 	
-	// Nesse exemplo está trabalhando com o endereço
+	// Nesse exemplo está trabalhando com o endereço { P recebe o endereço de N / P apontando para N }
 	p = &n;
 	
 	// Nesse exemplo está trabalhando com conteudo
 	*p = 20;
 	
+	
+	// Estao apontando para mesma posicao de memoria
 	printf("%d \n", n);
+	printf("%d \n", *p);
 	
 	// scanf - guardar o inteiro no endereço de Var 
 	// & - "Endereço de" 
