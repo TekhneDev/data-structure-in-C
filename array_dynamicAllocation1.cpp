@@ -1,24 +1,36 @@
 #include <stdio.h>
+#include <stdlib.h>
+// #define MAX 10
 
 
 
-int function(int *v) {
-	v[0] = 20;
-}
 
 int main() {
 	
+	int *v;
 	
-	int v[10], i;
+	v = (int*)malloc(10 * sizeof(int));
+	// v = malloc(MAX * sizeof(int));
+	if(v == NULL) {
+		printf("Memoria insuficiente!");
+		exit(1);
+	}
 	
-	for( i=0; i<10; i++)
-	  v[i] = i;
-	  
-
+	v[0] = 10;
+	v[1] = 20;
 	
-	function(v);
 	printf("%d \n", v[0]);
 	
+	// Funcao Malloc recebe como parametros o numero de bytes que se deseja alocar
+	// e retorna o endereco inicial da area de memoria alocada
+	// malloc - armazena valores de qualquer tipo por conseguinte retorna um ponteiro generico para um tipo qualquer, retorna geramente um VOID *
+	// conversao explicita - cast
+	
+	
+	
+	// liberar esse espaco de memoria
+ 	// free, funcao que recebe como parametro o ponteiro da memoria a ser desalocado
+	free(v);
 	
 	return 0;
 }
